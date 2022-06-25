@@ -1,0 +1,848 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+	/* CSS */
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -90px;
+		margin-left: 69%;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 30%;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	/* CSS */
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -90px;
+		margin-left: 49%;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 50%;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	/* CSS */
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -100px;
+		margin-left: 75%;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 320px;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	/* CSS */
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -85px;
+		margin-left: 50%;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 50%;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+	/* bagian checkout */
+	.lebar-input {
+		width: 158px;
+	}
+
+	/* bagian checkout end */
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	/* CSS */
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -75px;
+		margin-left: 50%;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 50%;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+	/* bagian checkout */
+	.lebar-input {
+		width: 158px;
+	}
+
+	/* bagian checkout end */
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	/* CSS */
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -75px;
+		margin-left: 10%;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 90%;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+	/* bagian checkout */
+	.lebar-input {
+		width: 158px;
+	}
+
+	/* bagian checkout end */
+
+	/* bagian sub_kategori */
+	.bagian-card {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.bagian-margin-card {
+		margin: 0;
+	}
+
+	.bagian-card h4 {
+		font-size: 13px;
+	}
+
+	.bagian-card h6 {
+		font-size: 10px;
+	}
+
+	/* bagian sub_kategori end */
+}
+
+@media (max-width: 320px) {
+	/* Bagian cart */
+	.shopping-cart {
+		margin-top: -75px;
+		background: rgb(255, 255, 255) none repeat scroll 0 0;
+		border-radius: 3px;
+		float: right;
+		/* margin: 20px 0; */
+		padding: 20px;
+		position: absolute;
+		z-index: 101;
+		width: 291px;
+		box-shadow: 7px 7px 24px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.shopping-cart .shopping-cart-header {
+		border-bottom: 1px solid rgb(232, 232, 232);
+		padding-bottom: 15px;
+	}
+
+	.shopping-cart .shopping-cart-header .shopping-cart-total {
+		float: right;
+	}
+
+	.shopping-cart .shopping-cart-items {
+		padding-top: 20px;
+	}
+
+	.shopping-cart .shopping-cart-items li {
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	.shopping-cart .shopping-cart-items img {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-name {
+		display: block;
+		font-size: 16px;
+		padding-top: 10px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-price {
+		color: rgb(99, 148, 248);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.shopping-cart .shopping-cart-items .item-quantity {
+		color: rgb(171, 176, 190);
+		font-size: 13px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shopping-cart::after {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
+		border-image: none;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 100%;
+		/* content: " "; */
+		height: 0;
+		left: 89%;
+		margin-left: -8px;
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+	}
+
+	.cart-icon {
+		color: rgb(81, 87, 131);
+		float: left;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+
+	.button {
+		background: rgb(99, 148, 248) none repeat scroll 0 0;
+		border-radius: 30px;
+		box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15);
+		color: rgb(255, 255, 255);
+		display: block;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.button:hover {
+		background: rgb(114, 158, 249) none repeat scroll 0 0;
+	}
+
+	.clearfix::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	/* Bagian Cart End */
+	/* bagian checkout */
+	.lebar-input {
+		width: 158px;
+	}
+
+	/* bagian checkout end */
+}

@@ -1,0 +1,54 @@
+#img_contain {
+	border: 1px solid grey;
+	margin-top: 10px;
+	width: 440px;
+	overflow: hidden;
+}
+
+#file-input-logo {
+	margin-left: 7px;
+	padding: 10px;
+	background-color: gray;
+}
+
+#file-input-produk {
+	margin-left: 7px;
+	padding: 10px;
+	background-color: gray;
+}
+
+#file-input-invoice {
+	margin-left: 7px;
+	padding: 10px;
+	background-color: gray;
+}
+
+#image-preview-logo {
+	height: 240px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	overflow: visible;
+}
+
+#image-preview-invoice {
+	height: 240px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	overflow: visible;
+}
+
+#image-preview-produk {
+	height: 240px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	overflow: visible;
+}
