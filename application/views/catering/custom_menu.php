@@ -1,3 +1,5 @@
+<script src="<?php echo base_url()?>assets/js/jquery-1.11.3.min.js"></script>
+
 <section id="bagian_modal_checkout">
     <?php $this->load->view('catering/modal_checkout') ?>
 </section>
@@ -72,14 +74,16 @@
                                         <h5 class="mb-1 text-dark text-center" style="font-weight: bold;">Buat Menu Custom</h5>
                                     </div>
                                     <div class="card-body osahan-payment">
+                                        <!-- Penambahan Custom Pesanan !-->
                                         <div class="form-group">
                                             <label for="">Custom </label>
-                                            <select name="custom" class="form-control" id="custom">
+                                            <select name="custom" class="form-control">
                                                 <option value="">Pilih Tipe</option>
                                                 <option value="prasmanan">Prasmanan</option>
                                                 <option value="nasi kotak">Nasi Kotak</option>
                                             </select>
                                         </div>
+                                        <!-- Penambahan Custom Pesanan !-->
                                         <div class="form-group">
                                             <label for="">Lauk Utama </label>
                                             <select name="laukutama" class="form-control" id="laukutama">
@@ -114,17 +118,6 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="">Sayur </label>
-                                            <select name="sayur" class="form-control" id="sayur">
-                                                <option value="">Pilih Menu Custom</option>
-                                                <?php if (count($sayur) > 0) { ?>
-                                                    <?php foreach ($sayur as $key) { ?>
-                                                        <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
-                                                    <?php } ?>
-                                                <?php } ?>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
                                             <label for="">Buah </label>
                                             <select name="buah" class="form-control" id="buah">
                                                 <option value="">Pilih Menu Custom</option>
@@ -135,7 +128,85 @@
                                                 <?php } ?>
                                             </select>
                                         </div>
-
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <label for="">Sayur </label>
+                                                    <select name="sayur" class="form-control" id="sayur">
+                                                        <option value="">Pilih Menu Custom</option>
+                                                        <?php if (count($sayur) > 0) { ?>
+                                                            <?php foreach ($sayur as $key) { ?>
+                                                                <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="">Sup </label>
+                                                    <select name="sup" class="form-control" id="sayur">
+                                                        <option value="">Pilih Menu Custom</option>
+                                                        <?php if (count($sup) > 0) { ?>
+                                                            <?php foreach ($sup as $key) { ?>
+                                                                <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <label for="">Kerupuk </label>
+                                                    <select name="kerupuk" class="form-control" id="sayur">
+                                                        <option value="">Pilih Menu Custom</option>
+                                                        <?php if (count($kerupuk) > 0) { ?>
+                                                            <?php foreach ($kerupuk as $key) { ?>
+                                                                <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="">Sambal </label>
+                                                    <select name="sambal" class="form-control" id="sayur">
+                                                        <option value="">Pilih Menu Custom</option>
+                                                        <?php if (count($sambal) > 0) { ?>
+                                                            <?php foreach ($sambal as $key) { ?>
+                                                                <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <label for="">Minuman </label>
+                                                    <select name="kerupuk" class="form-control" id="sayur">
+                                                        <option value="">Pilih Menu Custom</option>
+                                                        <?php if (count($minuman) > 0) { ?>
+                                                            <?php foreach ($minuman as $key) { ?>
+                                                                <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="">Snack </label>
+                                                    <select name="snack" id="" class="form-control">
+                                                        <option value="">Pilih Menu Custom</option>
+                                                        <?php if (count($snack) > 0) { ?>
+                                                            <?php foreach ($snack as $key) { ?>
+                                                                <option value="<?= $key['kd_custom'] ?>"><?= $key['nm_custom'] ?></option>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <h2 class="text-center mb-0">
                                         <span class="mytooltip tooltip-effect-5">
@@ -156,3 +227,10 @@
         </div>
     </div>
 </section>
+
+<!-- <script>
+    $('#xcustom').change(function() {
+        var cus = $(this).val();
+        $('#xminuman').prop('hidden', cus != 'prasmanan');
+    });
+</script> -->

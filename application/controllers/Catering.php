@@ -787,6 +787,15 @@ class Catering extends CI_Controller
         $data['laukpendamping'] = $this->db->get_where('custom', ['jenis_custom' => 'laukpendamping'])->result_array();
         $data['sayur'] = $this->db->get_where('custom', ['jenis_custom' => 'sayur'])->result_array();
         $data['buah'] = $this->db->get_where('custom', ['jenis_custom' => 'buah'])->result_array();
+
+        // Code Yang di revisi
+        $data['minuman'] = $this->db->get_where('custom', ['jenis_custom' => 'minuman'])->result_array();
+        $data['sambal'] = $this->db->get_where('custom', ['jenis_custom' => 'sambal'])->result_array();
+        $data['kerupuk'] = $this->db->get_where('custom', ['jenis_custom' => 'kerupuk'])->result_array();
+        $data['sup'] = $this->db->get_where('custom', ['jenis_custom' => 'sup'])->result_array();
+        $data['snack'] = $this->db->get_where('custom', ['jenis_custom' => 'snack'])->result_array();
+        // Code Yang direvisi
+
         $data['karbohidrat'] = $this->db->get_where('custom', ['jenis_custom' => 'karbohidrat'])->result_array();
         // $data['userCustomMenu'] = $this->ModelProduk->getUserCustomMenu();
 
@@ -803,17 +812,29 @@ class Catering extends CI_Controller
         $sayur =  getnamecustom($this->input->post('sayur')) != "" ? getnamecustom($this->input->post('sayur')) . "<br>" : "";
         $buah =  getnamecustom($this->input->post('buah')) != "" ? getnamecustom($this->input->post('buah')) . "<br>" : "";
         $karbohidrat =  getnamecustom($this->input->post('karbohidrat')) != "" ? getnamecustom($this->input->post('karbohidrat')) . "<br>" : "";
+        $sup =  getnamecustom($this->input->post('sup')) != "" ? getnamecustom($this->input->post('sup')) . "<br>" : "";
+        $minuman =  getnamecustom($this->input->post('minuman')) != "" ? getnamecustom($this->input->post('minuman')) . "<br>" : "";
+        $snack =  getnamecustom($this->input->post('snack')) != "" ? getnamecustom($this->input->post('snack')) . "<br>" : "";
+        $sambal =  getnamecustom($this->input->post('sambal')) != "" ? getnamecustom($this->input->post('sambal')) . "<br>" : "";
+        $kerupuk =  getnamecustom($this->input->post('kerupuk')) != "" ? getnamecustom($this->input->post('kerupuk')) . "<br>" : "";
         $gambar_awal = "custom.jpg";
-        $deskripsi = "<p>" . $laukutama . $laukpendamping . $sayur . $buah . $karbohidrat  . "</p>";
+        $deskripsi = "<p>" . $laukutama . $laukpendamping . $sayur . $buah . $karbohidrat  . $sup . $snack . $sambal . $kerupuk .  "</p>";
 
         $harga_laukutama =  gethargacustom($this->input->post('laukutama')) != 0 ? gethargacustom($this->input->post('laukutama')) : 0;
         $harga_laukpendamping =  gethargacustom($this->input->post('laukpendamping')) != 0 ? gethargacustom($this->input->post('laukpendamping')) : 0;
         $harga_sayur =  gethargacustom($this->input->post('sayur')) != 0 ? gethargacustom($this->input->post('sayur')) : 0;
         $harga_buah =  gethargacustom($this->input->post('buah')) != 0 ? gethargacustom($this->input->post('buah')) : 0;
         $harga_karbohidrat =  gethargacustom($this->input->post('karbohidrat')) != 0 ? gethargacustom($this->input->post('karbohidrat')) : 0;
+        $harga_sup =  gethargacustom($this->input->post('sup')) != 0 ? gethargacustom($this->input->post('sup')) : 0;
+        $harga_minuman =  gethargacustom($this->input->post('minuman')) != 0 ? gethargacustom($this->input->post('minuman')) : 0;
+        $harga_snack =  gethargacustom($this->input->post('snack')) != 0 ? gethargacustom($this->input->post('snack')) : 0;
+        $harga_sambal =  gethargacustom($this->input->post('sambal')) != 0 ? gethargacustom($this->input->post('sambal')) : 0;
+        $harga_kerupuk =  gethargacustom($this->input->post('kerupuk')) != 0 ? gethargacustom($this->input->post('kerupuk')) : 0;
+        
+        // Perbaikan Hasil dari Revisi
         $custom = $this->input->post('custom');
 
-        $harga = $harga_laukutama + $harga_laukpendamping + $harga_buah + $harga_sayur + $harga_karbohidrat;
+        $harga = $harga_laukutama + $harga_laukpendamping + $harga_buah + $harga_sayur + $harga_karbohidrat + $harga_sup + $harga_minuman + $harga_sambal + $harga_kerupuk + $harga_snack;
 
         $dataProduk = [
             'kd_produk' => $this->getKodeOtomatis("PS", "produk"),
@@ -826,6 +847,7 @@ class Catering extends CI_Controller
             'min_order' => 1,
             'created_at_admin' => $this->session->userdata('kd_member'),
             'updated_at_admin' => $this->session->userdata('kd_member'),
+            // Perbaikan Hasil Revisi
             'custom'    => $custom
         ];
 
